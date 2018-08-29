@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:300,400,700,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
+
+.main {
+	background: #eee;
+	min-height: 80vh;
+	font-family: Mukta;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}

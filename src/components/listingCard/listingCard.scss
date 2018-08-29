@@ -1,0 +1,100 @@
+.card {
+	background: #e5e5e5;
+	position: relative;
+	top: 0px;
+	flex-basis: calc(25% - 50px);
+	margin: 20px 0 50px;
+	min-width: 200px;
+	cursor: pointer;
+	box-shadow: 0 2px 17px -6px rgba(0, 0, 0, 0);
+	transition: all 0.3s ease;
+
+	&:hover {
+		top: -2px;
+		box-shadow: 0 9px 17px -6px rgba(0, 0, 0, 0.2);
+	}
+
+	.cardImage {
+		position: relative;
+		width: 100%;
+		height: 280px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		.cardRating {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: #fff;
+			padding: 8px 10px;
+			line-height: 15px;
+			height: 15px;
+		}
+
+		.cardPrice {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #fff;
+			padding: 8px 10px;
+			line-height: 15px;
+			height: 15px;
+		}
+	}
+
+
+
+	.cardInfo {
+		background: #e5e5e5;
+		padding: 15px;
+
+		.cardTitle {
+			padding: 0;
+			margin: 0 0 10px;
+			line-height: 1em;
+			color: #333;
+			font-weight: 400;
+			font-size: 1em;
+		}
+
+		.cardBrewery {
+			font-style: italic;
+			padding: 0;
+			margin: 0;
+			line-height: 1em;
+			color: #555;
+			font-weight: 300;
+			font-size: 0.95em;
+		}
+
+		.cardLowStock {
+			color: #FF4136;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 0.9em;
+			margin-top: 5px;
+		}
+	}
+
+
+	.clickToView {
+		position: absolute;
+		left: 0;
+		text-align: center;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #444;
+		width: 100%;
+		top: calc(100% - 5px);
+		opacity: 0;
+		transition: all 0.45s ease;
+	}
+
+	&:hover .clickToView {
+		position: absolute;
+		top: calc(100% + 5px);
+		opacity: 1;
+	}
+}
